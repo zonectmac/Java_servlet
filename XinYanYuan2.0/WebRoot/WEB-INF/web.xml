@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description>用户操作，注册，登录，修改密码</description>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.lin.servlet.UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/userRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/getUserInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUserInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateIcon</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateBackground</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/updateUserPassWord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/closeAllowFind</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/openAllowFind</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/getNearbyProgrammer</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<description>说说 操作</description>
+		<servlet-name>SpeakServlet</servlet-name>
+		<servlet-class>com.lin.servlet.SpeakServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>repair</servlet-name>
+    <servlet-class>com.lin.servlet.repair</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>repairservlet</servlet-name>
+    <servlet-class>repairservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>xmlServlet</servlet-name>
+    <servlet-class>com.lin.servlet.xmlServlet</servlet-class>
+  </servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/publishSpeak</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/getSpeakList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/getSpeakInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/unPraisesSpeak</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/praisesSpeak</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/commentSpeak</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/replySpeak</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/addProwseNum</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpeakServlet</servlet-name>
+		<url-pattern>/unReplySpeak</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>repair</servlet-name>
+    <url-pattern>/repair</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>xmlServlet</servlet-name>
+    <url-pattern>/xmlServlet</url-pattern>
+  </servlet-mapping>
+ 
+  
+  
+</web-app>
